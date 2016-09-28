@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'fonts';
+
+
+/*body {
+    font-family: "EnamelaW01-Condensed";
+    background-image: url(index.jpg);
+    background-image: url(index_areas.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 1800px;
+}*/
+
+#BG {
+    background-image: url('./img/land1920.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.row {
+    max-width: 940 px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*
+@import 'header/header';
+
+font: 15px EnamelaW01-Condensed, arial, sans-serif;*/
