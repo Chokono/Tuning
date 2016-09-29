@@ -3,6 +3,7 @@
 
 body {
     min-height: 10267px;
+    font-family: arial;
 }
 
 #BG {
@@ -12,12 +13,16 @@ body {
 }
 
 .row {
-    max-width: 1000px;
+    max-width: 940px;
     margin: 0 auto;
 }
 
 .left {
     float: left;
+}
+
+.gran {
+	max-width: 1920px;
 }
 
 .right {
@@ -29,5 +34,5 @@ body {
 }
 
 
-
+@import 'road/road';
 @import 'header/header';
