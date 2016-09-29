@@ -15,6 +15,9 @@ body {
 .row {
     max-width: 940px;
     margin: 0 auto;
+     @media screen and (max-width: 980px) {
+     	max-width: 95%;
+     }
 }
 
 .left {
@@ -33,6 +36,7 @@ body {
 	clear: both;
 }
 
+@import 'consultation/consultation';
 @import 'services/services';
 @import 'road/road';
 @import 'header/header';

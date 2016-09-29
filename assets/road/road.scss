@@ -8,10 +8,9 @@ h1,h2,h3 {
 .road {
 	/*@include bg('road.jpeg');*/
 	.px770 {
-		padding: 0.1px 0;
-		margin: 0 auto;
-		max-width: 770px;
-		text-align: center;		
+		form {
+			margin: 30px 0 63px;
+		}	
 		h1 {
 			font-size: 36px;
 			margin-top: 63px;
@@ -28,42 +27,74 @@ h1,h2,h3 {
 			margin-top: 47px;
 			.right {
 				margin-right: 5%;
+				span {
+					@media screen and (max-width: 680px) {
+						display: none;
+					}
+				}
 			}
 			.left {
 				margin-left: 9%;
-			}
-		}
-		form {
-			margin: 30px 0 63px;
-			color: white;
-			.left {
-				padding: 18px 50px;	
-				border: 2px solid white;
-				border-radius: 5px;
-				background: none;
-				font-size: 16px;
-				font-weight: bold;
-				width: 260px;
-				margin-left: 1%; 
-				&:focus {
-					outline: none;
+				span {
+					@media screen and (max-width: 680px) {
+						display: none;
+					}
 				}
 			}
-			.right {
-				padding: 18px 50px;
-				border-radius: 5px;
-				background-color: orange;
-				border: none;
-				font-size: 16px;
-				font-weight: bold;
-				width: 360px;
-				margin-right: 1%;
-				&:hover {
-					cursor: pointer;
-					background-color: darkorange;
-				}
-			}
-		}
+		}		
 	}
 }
 
+.px770 {
+	padding: 0.1px 0;
+	margin: 0 auto;
+	max-width: 770px;
+	text-align: center;
+	@media screen and (max-width: 815px) {
+     	max-width: 95%;
+     }
+	form {
+		.left {
+			padding: 18px 50px;	
+			border: 2px solid white;
+			border-radius: 5px;
+			background: none;
+			font-size: 16px;
+			font-weight: bold;
+			width: 34.5%;
+			margin-left: 0.5%;
+			color: white;
+			&:focus {
+				outline: none;
+			}
+			@media screen and (max-width: 680px) {
+     			width: 60%;
+     			float: none;
+     			margin: 0 auto 20px;;
+     		}
+		}
+		.right {
+			padding: 18px 50px;
+			border-radius: 5px;
+			background-color: orange;
+			border: none;
+			font-size: 16px;
+			font-weight: bold;
+			width: 47.5%;
+			margin-right: 0.5%;
+			color: white;
+			&:hover {
+				cursor: pointer;
+				background-color: darkorange;
+			}
+			&:focus {
+				outline: none;
+			}
+			@media screen and (max-width: 680px) {
+     			width: 78%;
+     			float: none;
+     			margin: 0 auto;
+     		}
+		}
+	}
+}

@@ -45,4 +45,9 @@
 			line-height: 24px;	
 		}
 	}
+	.header4 {
+		@media screen and (max-width: 680px) {
+			display: none;
+		}
+	}
 }
