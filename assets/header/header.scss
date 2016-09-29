@@ -1,7 +1,36 @@
-$color : #890;
+@import '../mixins/mixins';
 
-.logo{
-	color:$color;
-	background-image:url(header/logo.svg);
-	background-size: 54px;
+.header {
+	height: $header;
+	text-align: justify;
+	font-family: arial;
+	.headerall {
+		display: inline-block;
+		margin-right: 2%;
+		&:last-child {
+			margin-right: 0;
+		}
+		.logo {
+			display: inline-block;
+			vertical-align: top;
+			color: #383737;
+			text-align: right;
+			text-transform: uppercase;
+			.logoup{
+				@include bg('logotip.png');
+			}
+			.logodown {
+				display: inline-block;
+				vertical-align: top;
+				p {					
+					font-size: 16px;
+					font-weight: bold;
+				}
+				span {
+					font-size: 10px;
+					margin-top: -2px;
+				}
+			}
+		}
+	}
 }

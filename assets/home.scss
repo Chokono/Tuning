@@ -1,15 +1,9 @@
 @import 'reset';
-@import 'fonts';
 
 
-/*body {
-    font-family: "EnamelaW01-Condensed";
-    background-image: url(index.jpg);
-    background-image: url(index_areas.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    min-height: 1800px;
-}*/
+body {
+    min-height: 10267px;
+}
 
 #BG {
     background-image: url('./img/land1920.png');
@@ -18,7 +12,8 @@
 }
 
 .row {
-    max-width: 940 px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .left {
@@ -34,7 +29,5 @@
 }
 
 
-/*
-@import 'header/header';
 
-font: 15px EnamelaW01-Condensed, arial, sans-serif;*/
+@import 'header/header';

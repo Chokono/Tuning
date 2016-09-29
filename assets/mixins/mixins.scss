@@ -1,0 +1,21 @@
+@mixin after($height,$width) {
+	display: block;
+	content: "";
+	height: $height + px;
+	width: $width + px;
+	position: absolute;
+}
+
+@mixin bg($imgname) {
+    background: {
+        image: url('./img/#{$imgname}');
+        position: center;
+        size: 100%;
+        repeat: no-repeat;
+    }
+}
+
+
+$header: 95px;
+$colorh: #0076bf;
+$hover: #cccccc;
