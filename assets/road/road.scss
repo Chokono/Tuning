@@ -41,7 +41,27 @@ h1,h2,h3 {
 					}
 				}
 			}
-		}		
+		}
+		.comporison {
+			position: relative;
+			box-shadow: 0 0 1px 1px #000;
+			height: 293px;
+			width: 575px;
+			margin: 0 auto;
+			background-position: center top;
+			background-repeat: no-repeat;
+			.innerComporizon {
+				position: relative;
+				width: 50%;
+				height: 293px;
+				/*&::after{
+					@include after(293,3);
+					right: 0;
+					top: 0;
+					background-color: red;
+				}*/
+			}
+		}	
 	}
 }
 

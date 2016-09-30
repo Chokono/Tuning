@@ -15,3 +15,4 @@ BG.addEventListener('click', function() {
     };
 });
 
+require ("./road");
