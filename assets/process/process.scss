@@ -1,0 +1,91 @@
+.process {
+	text-align: center;
+	padding: 0.1px 0 135px;
+	h1 {
+		margin: 77px 0 55px;
+		font-size: 31px;
+	}
+	.tabs {
+		.radio {
+			display: none;
+		}	
+		.label {
+			width: 75%;
+			margin: 0 auto;
+			border-bottom: 3px solid orange;
+			.labelRadio {
+				display: block;
+				width: 190px;
+				padding: 15px 40px;
+				font-size: 18px;
+				vertikal-align:bottom;
+				span{
+					vertikal-align:center;
+					color: orange;
+				}
+			}
+			.labelRadioProtect {
+				line-height: 36px;
+			}
+		}
+		.jiguli{
+			width: 50%;
+			margin: 0 1.99% 0 -10%;
+		}
+		.conteinerRadio {
+			width: 58%;
+			text-align: left;
+			h2 {
+				font-size: 24px;
+				margin: 64px 0 20px;
+			}
+			.innerprocess {
+				p {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+			.innerProtect, .innerRegain {
+				display: none;
+			}
+		}
+		.krest {
+			position: relative;
+			padding-left: 43px;
+			margin: 35px 0;
+			display: none;
+			&::before {
+				@include after(23,3);
+				background-color: orange;
+				left: 9px;
+				top: 0px;
+			}
+			&::after {
+				@include after(3,23);
+				background-color: orange;
+				left: 0px;
+				top: 10px;
+			}
+			h3 {
+				display: inline-block;
+				text-transform: none;		
+				font-size: 23px;
+			}
+		}
+		#polirovkaRegain:checked ~ .conteinerRadio .innerRegain,
+		#polirovkaRegain:checked ~ .krest,
+		#polirovkaProtect:checked ~ .conteinerRadio .innerProtect {
+			display: block;
+		}
+		#polirovkaRegain:checked ~ .label .labelRadioRegain,
+		#polirovkaProtect:checked ~ .label .labelRadioProtect {
+			border: 3px solid orange;
+			border-bottom: none;
+		}
+	}
+	.protectH3 {
+		text-transform: none;
+		margin: 64px 0 56px;
+		font-size: 22px;
+	}
+}
