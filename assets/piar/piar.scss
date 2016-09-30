@@ -1,0 +1,153 @@
+@import '../mixins/mixins';
+
+.piar {
+	padding: 0.1px 0 85px;
+	.row {
+		text-align: center;
+		h1 {
+			font-size: 28px;
+			margin: 105px 0 100px;
+		}
+		.piarCont {
+			@media screen and (max-width: 680px) {
+				width: 90%;
+				margin: 0 auto;
+			}
+			
+			.center {
+				display: inline-block;
+				vertical-align: top;
+			}
+			img {
+				width: 42%;
+				@media screen and (max-width: 680px) {
+					width: 90%;
+					float: none;
+					margin: 0 auto;
+				}
+			}
+			.numfer {
+				font-size: 145px;
+				font-weight: bold;
+				color: orange;
+				width: 15%;
+				position: relative;
+				text-align: left;
+				&::after {
+					@include after(20,20);
+					bottom: 20px;
+					left: 80px;
+					border-radius: 50%;
+					background-color: orange;
+				}
+				@media screen and (max-width: 680px) {
+					float: left;
+					width: 20%;
+				}
+			}
+			.piarText {
+			text-align: left;
+				width: 43%;
+					@media screen and (max-width: 680px) {
+						float: left;
+						width: 70%;
+					margin-left: 5%;
+					}
+				h4 {
+					font-weight: bold;
+					font-size: 24px;
+					line-height: 30px;
+				}
+				p {
+					font-size: 14px;
+					font-weight: bold;
+					margin-top: 7px;
+					line-height: 24px;
+				}
+			}
+		}
+		.piarCont1 {
+			margin: 0 auto 130px;
+			.numfer::after {
+				left: 70px;
+			}
+		}
+		.piarCont2 {
+			width: 100%;
+			margin-bottom: 90px;
+			img {
+				width: 40%;
+				@media screen and (max-width: 680px) {
+					width: 90%;
+					margin: 0 auto;
+				}
+			}
+			.piarText {
+				width: 42%;
+				@media screen and (max-width: 680px) {
+					float: left;
+					width: 70%;
+					margin-left: 5%;
+				}
+			}
+			.numfer {
+				text-align: left;
+				width: 15%;
+			}
+		}
+		.piarCont3 {
+			width: 92%;
+			margin: 0 0 120px 5%;
+			img {
+				width: 24%;
+				@media screen and (max-width: 680px) {
+					width: 90%;
+					margin: 0 auto;
+				}
+			}
+			.numfer {
+				width: 17%;
+				@media screen and (max-width: 680px) {
+					float: left;
+					width: 20%;
+				}
+			}
+			.piarText {
+				width: 50%;
+				margin-right: 2%;
+				@media screen and (max-width: 680px) {
+					float: left;
+					width: 70%;
+					margin-left: 5%;
+				}
+			}
+		}
+		.piarCont4 {
+			margin-left: 0%;
+			img {
+				width: 35%;
+				@media screen and (max-width: 680px) {
+					width: 90%;
+					margin: 0 auto;
+				}
+			}
+			.numfer {
+				margin: 20px 0 0 3%;
+				@media screen and (max-width: 680px) {
+					float: left;
+					width: 20%;
+					margin: 0;
+				}
+			}
+			.piarText {
+				width: 45%;
+				margin: 40px 0 0 2%;
+				@media screen and (max-width: 680px) {
+					float: left;
+					width: 70%;
+					margin-left: 5%;
+				}
+			}
+		}
+	}
+}
