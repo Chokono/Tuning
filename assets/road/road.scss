@@ -61,16 +61,15 @@ h1,h2,h3 {
 			background: none;
 			font-size: 16px;
 			font-weight: bold;
-			width: 34.5%;
+			width: 250px;
 			margin-left: 0.5%;
 			color: white;
 			&:focus {
 				outline: none;
 			}
-			@media screen and (max-width: 680px) {
-     			width: 60%;
+			@media screen and (max-width: 790px) {
      			float: none;
-     			margin: 0 auto 20px;;
+     			margin: 0 auto 20px;
      		}
 		}
 		.right {
@@ -80,7 +79,7 @@ h1,h2,h3 {
 			border: none;
 			font-size: 16px;
 			font-weight: bold;
-			width: 47.5%;
+			width: 350px;
 			margin-right: 0.5%;
 			color: white;
 			&:hover {
@@ -90,8 +89,7 @@ h1,h2,h3 {
 			&:focus {
 				outline: none;
 			}
-			@media screen and (max-width: 680px) {
-     			width: 78%;
+			@media screen and (max-width: 790px) {
      			float: none;
      			margin: 0 auto;
      		}
