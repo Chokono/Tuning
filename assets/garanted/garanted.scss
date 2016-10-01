@@ -1,10 +1,21 @@
 .garanted {
 	padding: 0.1px 0;
-	row {
+	text-align: center;
+	.row {
 		h1 {
-			font-size: 26px;
+			font-size: 29px;
 			color: white;
-			margin: 120px 0 80px;
+			margin: 85px 0 25px;
+		}
+		.icons {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 45px 35px 0;
+			width: 275px;
+			height: 150px;
+			&:nth-child(3n+1) {
+				margin-right: 0;				
+			}
 		}
 	}
 }

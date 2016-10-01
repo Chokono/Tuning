@@ -55,9 +55,10 @@ h1,h2,h3 {
 				width: 50%;
 				height: 293px;
 				&::after{
-					@include after(293,3);
-					right: 1px;
+					@include after(291,0);
+					right: 0px;
 					top: 0;
+					box-shadow: 0 0 0 1px red;
 					background-color: red;
 				}
 			}
