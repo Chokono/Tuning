@@ -54,12 +54,12 @@ h1,h2,h3 {
 				position: relative;
 				width: 50%;
 				height: 293px;
-				/*&::after{
+				&::after{
 					@include after(293,3);
-					right: 0;
+					right: 1px;
 					top: 0;
 					background-color: red;
-				}*/
+				}
 			}
 		}	
 	}
