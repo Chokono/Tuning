@@ -54,13 +54,14 @@ h1,h2,h3 {
 				position: relative;
 				width: 50%;
 				height: 293px;
-				&::after{
+				border-right: 20px;
+				/*&::after{
 					@include after(291,0);
 					right: 0px;
 					top: 0;
 					box-shadow: 0 0 0 1px red;
 					background-color: red;
-				}
+				}*/
 			}
 		}	
 	}
