@@ -36,6 +36,11 @@ body {
 	clear: both;
 }
 
+.failImgFolder {
+    background-image: url('img/zapor.png'),
+                     url('img/zapor1.png');
+}
+
 @import 'consultation/consultation';
 @import 'services/services';
 @import 'road/road';
@@ -43,4 +48,3 @@ body {
 @import 'process/process';
 @import 'piar/piar';
 @import 'garanted/garanted';
-@import 'css/font-awesome';
