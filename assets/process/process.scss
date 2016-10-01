@@ -78,13 +78,13 @@
 			margin: 35px 0;
 			display: none;
 			&::before {
-				@include after(23,3);
+				@include after(23px,3px);
 				background-color: orange;
 				left: 9px;
 				top: 0px;
 			}			
 			&::after {
-				@include after(3,23);
+				@include after(3px,23px);
 				background-color: orange;
 				left: 0px;
 				top: 10px;

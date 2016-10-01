@@ -39,11 +39,14 @@ body {
 .failImgFolder {
     background-image: url('img/zapor.png'),
                      url('img/zapor1.png'),
-                     url('img/line.png');
+                     url('img/line.png'),
+                     url('img/moskvich.jpg'),
+                     url('img/moskvich1.png'),
+                     url('img/lada.png');
 }
 
 @import 'fonts/fontawesome/font-awesome.css'; 
-
+@import 'galery/galery';
 @import 'consultation/consultation';
 @import 'services/services';
 @import 'road/road';
@@ -51,3 +54,5 @@ body {
 @import 'process/process';
 @import 'piar/piar';
 @import 'garanted/garanted';
+@import 'reports/reports';
+@import 'tarifs/tarifs';

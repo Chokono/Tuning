@@ -1,5 +1,5 @@
 .garanted {
-	padding: 0.1px 0;
+	padding: 0.1px 0 90px;
 	text-align: center;
 	.row {
 		h1 {
@@ -14,7 +14,37 @@
 			width: 275px;
 			height: 150px;
 			&:nth-child(3n+1) {
-				margin-right: 0;				
+				margin-right: 0;
+				@media screen and (max-width: 980px) {
+			     	margin-right: 45px;
+			     }
+			     @media screen and (max-width: 940px) {
+					margin: 0 30px 35px;
+				}
+			}
+			&:nth-child(2n+1) {
+				@media screen and (max-width: 970px) {
+					margin-right: 0;
+				}
+				@media screen and (max-width: 940px) {
+					margin: 0 30px 35px;
+				}
+			}
+			@media screen and (max-width: 940px) {
+				margin: 0 30px 35px;
+			}	
+			
+			span {
+				margin-bottom: 20px;
+				vertical-align: center;
+			}
+			i {
+				margin-top: 20px;
+				color: red;
+			}
+			p {
+				color: white;
+				margin-top: 20px;
 			}
 		}
 	}

@@ -42,28 +42,7 @@ h1,h2,h3 {
 				}
 			}
 		}
-		.comporison {
-			position: relative;
-			box-shadow: 0 0 1px 1px #000;
-			height: 293px;
-			width: 575px;
-			margin: 0 auto;
-			background-position: center top;
-			background-repeat: no-repeat;
-			.innerComporizon {
-				position: relative;
-				width: 50%;
-				height: 293px;
-				border-right: 20px;
-				/*&::after{
-					@include after(291,0);
-					right: 0px;
-					top: 0;
-					box-shadow: 0 0 0 1px red;
-					background-color: red;
-				}*/
-			}
-		}	
+		@include comporison(293px, 575px);		
 	}
 }
 

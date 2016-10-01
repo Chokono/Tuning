@@ -1,8 +1,8 @@
 @mixin after($height,$width) {
 	display: block;
 	content: "";
-	height: $height + px;
-	width: $width + px;
+	height: $height;
+	width: $width;
 	position: absolute;
 }
 
@@ -13,6 +13,37 @@
         size: 100%;
         repeat: no-repeat;
     }
+}
+
+@mixin comporison ($height,$width) {
+            .comporison {
+            position: relative;
+            box-shadow: 0 0 1px 1px #000;
+            height: $height;
+            width: $width;
+            margin: 0 auto;
+            background-position: left top;
+            background-repeat: no-repeat;
+            .innerComporizon {
+                position: relative;
+                width: 50%;
+                height: $height;
+                background-repeat: no-repeat;
+                &::after{
+                    @include after($height,0);
+                    right: 0px;
+                    top: 0;
+                    box-shadow: 0 0 0 1px red;
+                    background-color: red;
+                }
+                &::before {
+                    @include after(1px, 1px);
+                    right: 0px;
+                    top: $height/2;
+                    box-shadow: 0 0 0 15px red;
+                }
+            }
+        }
 }
 
 
