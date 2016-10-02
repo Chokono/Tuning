@@ -1,20 +1,29 @@
-@import '../mixins/mixins';
-
-.header {
-	height: $header;	
-	font-family: arial;
-	box-shadow: 0 7px 5px -5px black;
-	.rowheader {
-		text-align: justify;
-	}	
-	.headerall {
+.footer {
+	padding: 0.1px 0;
+	.row {
+		h1{
+			margin: 70px 0 30px;
+			color: white;
+		}
+		h3 {
+			color: white;
+			margin-bottom: 50px;
+		}
+		.headerall {
 		display: inline-block;
 		vertical-align: top;
 		color: #383737;
 		a {
 			text-decoration: none;
-			display: inline-block;			
+			display: inline-block;
 			color: #383737;
+			line-height: 15px;
+			vertical-align: center;
+		}
+		span{
+			margin-top: 10px;
+			line-height: 15px;
+			vertical-align: center;
 		}
 		.logo {
 			text-align: right;
@@ -31,16 +40,13 @@
 					line-height: 13px;
 				}
 				span {
+					margin-top: 0px;
 					font-size: 9px;
 					line-height: 5px;
 				}
 			}
 		}
 	}
-	.header2 {
-		margin-top: $header/2-8px;
-	}
-
 	.text {
 		margin-top: 20px;
 		span {
@@ -52,5 +58,6 @@
 		@media screen and (max-width: 680px) {
 			display: none;
 		}
+	}
 	}
 }

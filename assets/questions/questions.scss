@@ -13,7 +13,7 @@
 			&::before {
 				@include after(3px,18px);
 				background-color: orange;
-				top: 20px;
+				top: 30px;
 				left: 0px;
 			}
 			.cross {
@@ -21,11 +21,11 @@
 				width: 3px;
 				background-color: orange;
 				position: absolute;
-				top: 12px;
+				top: 22px;
 				left: 8px;
 			}
 			.vopros {
-				padding: 10px 0;
+				padding: 20px 0;
 				font-size: 21px;
 				line-height: 25px;
 				font-weight: bold;
@@ -33,11 +33,16 @@
 					cursor: pointer;
 				}
 			}
-			.otvet {
-				font-size: 18px;
-				padding: 10px 0;
-				line-height: 21px;
-				display: none;
+			.parentOtvet {
+				height: 0;
+				overflow: hidden;
+				.otvet {
+					padding: 20px 0;
+					font-size: 18px;
+					line-height: 21px;
+					vertical-align: middle;				
+					overflow: hidden;
+				}
 			}
 		}
 	}
