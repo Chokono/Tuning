@@ -6,8 +6,54 @@
 			font-size: 30px;
 			margin: 84px 0 60px;
 		}
-		.radio {
-			display: block;
+		.tarifsTabs{
+			.radio {
+				display: none;
+			}			
+			.tarifsTable {
+				text-transform: uppercase;
+				font-size: 15px;
+				display: table;
+				width: 100%;
+				font-weight: bold;
+				border-collapse: collapse;				
+				ul {
+					display: table-row;
+					border: none;				
+					li {
+						display: table-cell;
+						padding: 24px 15px;
+						border: 2px solid red;
+					}
+					.colname {
+						text-align: left;
+					}
+					.cars {
+						vertical-align: center;
+						line-height: 100%;
+					}
+				}
+				header {
+					display: table-header-group;
+					li {
+						border: none;
+						padding: 2px 15px;						
+						.label {
+							display: block;
+							color: orange;
+						}
+					}
+				}
+			}
+		}
+	}
+	.px770 {
+		form {
+			margin: 42px 0 70px;
+			.left {
+				border-color: black;
+				color: black;
+			}
 		}
 	}
 }
