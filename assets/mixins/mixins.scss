@@ -15,38 +15,32 @@
     }
 }
 
-@mixin comporison ($height,$width) {
+@mixin comporison {
             .comporison {
             position: relative;
             box-shadow: 0 0 1px 1px #000;
-            height: $height;
-            width: $width;
             margin: 0 auto;
-            background-position: left top;
+            background-position: center top;
             background-repeat: no-repeat;
+            overflow: hidden;
             .innerComporizon {
+                transition: 0.2s linear;
                 position: relative;
-                width: 50%;
-                height: $height;
-                background-repeat: no-repeat;
-                &::after{
-                    @include after($height,0);
-                    right: 0px;
-                    top: 0;
-                    box-shadow: 0 0 0 1px red;
-                    background-color: red;
-                }
-                &::before {
-                    @include after(1px, 1px);
-                    right: 0px;
-                    top: $height/2;
-                    box-shadow: 0 0 0 15px red;
+                border-right: 4px solid red;
+                span {
+                    position: absolute;
+                    height: 24px;
+                    width: 24px;
+                    right:-14px;
+                    top:45%;
+                    background: red;
                 }
             }
         }
-}
+    }
 
 
 $header: 95px;
 $colorh: #0076bf;
 $hover: #cccccc;
+

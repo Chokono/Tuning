@@ -16,3 +16,4 @@ BG.addEventListener('click', function() {
 });
 
 require ("./road");
+require ("./questions");

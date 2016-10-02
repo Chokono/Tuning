@@ -41,10 +41,11 @@ h1,h2,h3 {
 					}
 				}
 			}
-		}
-		@include comporison(293px, 575px);		
+		}			
 	}
 }
+
+@include comporison();
 
 .px770 {
 	padding: 0.1px 0;
