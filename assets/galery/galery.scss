@@ -1,9 +1,11 @@
 @import '../mixins/mixins';
 
 .galery {
-	padding: 0.1px 0 135px;
+	padding: 50px 0;
 	.row {
 		text-align: center;
+		overflow: hidden;
+		margin-bottom: 30px; 
 		h1 {
 			font-size: 30px;
 			margin: 82px 0 42px;
@@ -12,6 +14,36 @@
 			font-size: 24px;
 			margin-bottom: 56px;
 			color: orange;
-		}	
+		}
+		.slider {
+			position: relative;
+		}
+		.prev {
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			color: orange;
+			z-index:2;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.next {
+			position: absolute;
+			color: orange;
+			top: 50%;
+			left: 91%;
+			z-index: 2;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.image {
+			height: 0;
+			overflow: hidden;
+		}
+		.image1 {
+			height: auto;
+		}
 	}
 }

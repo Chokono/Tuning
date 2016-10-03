@@ -1,55 +1,116 @@
 .tarifs {
-	padding: 0.1px 0;
+	padding: 50px 0;
 	text-align: center;
+	background-color: #ddd;
 	.row {
 		h1 {
 			font-size: 30px;
-			margin: 84px 0 60px;
+			margin: 24px 0 50px;
+		}
+		h3 {
+			font-size: 18px;
+			color: orange;
+			margin-bottom: 30px;
+			display: none;
+			@media screen and (max-width: 740px) {
+				display: block;
+			}
 		}
 		.tarifsTabs{
 			.radio {
 				display: none;
-			}			
+			}
+			.labels {
+				text-transform: uppercase;
+				font-size: 15px;
+				display: none;
+				width: 100%;
+				font-weight: bold;
+				border-collapse: collapse;
+				@media screen and (max-width: 740px) {
+					display: table;
+				}
+				ul {
+					display: table-row;
+					li {
+						display: table-cell;
+						padding: 24px 15px;
+					}
+				}
+			}	
 			.tarifsTable {
 				text-transform: uppercase;
 				font-size: 15px;
 				display: table;
 				width: 100%;
 				font-weight: bold;
-				border-collapse: collapse;				
+				border-collapse: collapse;
 				ul {
 					display: table-row;
-					border: none;				
+					&:last-child {
+						li {
+							border-bottom: none;
+						}
+					}
 					li {
 						display: table-cell;
 						padding: 24px 15px;
-						border: 2px solid red;
+						border-bottom: 2px solid gray;
+						border-right: 2px solid gray;
+						&:last-child {
+							border-right: none;
+						}
 					}
 					.colname {
 						text-align: left;
 					}
-					.cars {
-						vertical-align: center;
+					.colcars {
+						vertical-align: middle;
 						line-height: 100%;
+						@media screen and (max-width: 740px) {
+							display: none;
+						}
 					}
 				}
 				header {
 					display: table-header-group;
+					@media screen and (max-width: 740px) {
+						display: none;
+					}
+					ul {
+						&:last-child {
+						li {
+							border-bottom: 2px solid gray;
+						}
+					}
+					}
+					.colname {
+						vertical-align: middle;
+						line-height: 100%;
+					}
 					li {
-						border: none;
-						padding: 2px 15px;						
-						.label {
+						i {
 							display: block;
 							color: orange;
 						}
 					}
 				}
 			}
+			#sedan:checked ~ .labels ul li .labelsedan,
+			#jeep:checked ~ .labels ul li .labeljeep,
+			#extra:checked ~ .labels ul li .labelextra {
+				color: orange;
+			}
+			#sedan:checked ~ .tarifsTable ul .collight,
+			#jeep:checked ~ .tarifsTable ul .colmedium,
+			#extra:checked ~ .tarifsTable ul .colhard {
+				display: table-cell;
+			}
 		}
 	}
 	.px770 {
 		form {
-			margin: 42px 0 70px;
+			margin: 42px 0 20px;
 			.left {
 				border-color: black;
 				color: black;

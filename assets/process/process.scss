@@ -1,8 +1,8 @@
 .process {
 	text-align: center;
-	padding: 0.1px 0 135px;
+	padding: 50px 0;
 	h1 {
-		margin: 77px 0 55px;
+		margin: 27px 0 55px;
 		font-size: 31px;
 	}
 	.tabs {
@@ -19,6 +19,9 @@
 				padding: 15px 0px;
 				font-size: 18px;
 				vertical-align: bottom;
+				&:hover {
+					cursor: pointer;
+				}
 				@media screen and (max-width: 680px) {
 					font-size: 13px;
 					width: 49%;
@@ -119,6 +122,7 @@
 	}
 	.px770 {
 		form {
+			margin-bottom: 30px;
 			.left {
 				border-color: black;
 				color: black;

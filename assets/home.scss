@@ -2,14 +2,7 @@
 
 
 body {
-    min-height: 10267px;
     font-family: arial;
-}
-
-#BG {
-    background-image: url('./img/land1920.png');
-    background-repeat: no-repeat;
-    background-position: center top;
 }
 
 .row {
@@ -36,15 +29,6 @@ body {
 	clear: both;
 }
 
-.failImgFolder {
-    background-image: url('img/zapor.png'),
-                     url('img/zapor1.png'),
-                     url('img/line.png'),
-                     url('img/moskvich.jpg'),
-                     url('img/moskvich1.png'),
-                     url('img/lada.png');
-}
-
 @import 'fonts/fontawesome/font-awesome.css'; 
 @import 'galery/galery';
 @import 'consultation/consultation';
@@ -59,3 +43,4 @@ body {
 @import 'map/map';
 @import 'questions/questions';
 @import 'footer/footer';
+@import 'folder/folder';

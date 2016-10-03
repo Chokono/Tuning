@@ -29,11 +29,13 @@
                 border-right: 4px solid red;
                 span {
                     position: absolute;
-                    height: 24px;
-                    width: 24px;
-                    right:-14px;
+                    height: 0px;
+                    width: 4px;
+                    right: -24px;
                     top:45%;
-                    background: red;
+                    border: 20px solid red;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
                 }
             }
         }

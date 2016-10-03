@@ -1,12 +1,12 @@
 @import '../mixins/mixins';
 
 .piar {
-	padding: 0.1px 0 85px;
+	padding: 50px 0;
 	.row {
 		text-align: center;
 		h1 {
 			font-size: 28px;
-			margin: 105px 0 100px;
+			margin: 50px 0 80px;
 		}
 		.piarCont {
 			@media screen and (max-width: 680px) {
@@ -34,7 +34,7 @@
 				position: relative;
 				text-align: left;
 				&::after {
-					@include after(20,20);
+					@include after(20px,20px);
 					bottom: 20px;
 					left: 80px;
 					border-radius: 50%;
