@@ -4,7 +4,6 @@ let next = document.querySelectorAll(".next")[0];
 let slideNumber = document.querySelectorAll('.image').length;
 prev.addEventListener('click', (e) => {	
 	document.querySelectorAll(`.image`)[index-1].style.height = '0';
-	console.log (document.querySelectorAll(`.image`)[index-1]);
 	if (index !== 1){	
 		index-=1;
 	}	else {
@@ -16,10 +15,8 @@ prev.addEventListener('click', (e) => {
 
 next.addEventListener('click', (e) => {	
 	document.querySelectorAll(`.image`)[index-1].style.height = '0';
-	console.log(slideNumber);
 	if (index !== slideNumber){		
 		index+=1;
-		console.log(index);
 	}	else {
 		index = 1;
 	}

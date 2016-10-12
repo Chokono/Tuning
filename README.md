@@ -1,11 +1,8 @@
-#default webpack config
+#Этот проект разработан с использованием следующих технологий:
+1. HTML
+2. SASS
+3. Java Script
 
-create development version
-```bash
-webpack
-```
-
-create production version
-```bash
-NODE_ENV=production webpack
-```
+Для компиляции SASS была использована программа-сборщик Webpack.
+ЧТобы просмотреть проект, вам необходимо установить Webpack и запустить
+программу в папке Tuning через терминал.
