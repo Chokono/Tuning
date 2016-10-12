@@ -6,3 +6,4 @@ require ("./comporison");
 require ("./questions");
 require ("./reports");
 require ("./galery");
+//require ("./bootstrap");
